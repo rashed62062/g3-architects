@@ -76,12 +76,15 @@ main > section{
     text-decoration: none;
     font-weight: 500;
 }
-
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
 }
-
+/* header style */
 /* banner related styles */
 .banner-content{
     max-width: 850px;
@@ -97,4 +100,32 @@ main > section{
 
 .banner-image{
     width: 100%;
+}
+/* team and feature related styles */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.feture-title{
+    font-size: 2.8rem;
+}
+#Quick-list{
+    font-weight: 500;
+}
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .navbar, .nav-links{
+
+        flex-direction: column;
+    }
+    
 }
